@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        label {
+            width: 100px;
+            margin-right: 10px;
+            text-align: right;
+        }
+
+        input {
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Contact Us</h1>
+        <fieldset>
+            <legend>Your mesage:</legend>
+            <div class="form-group">
+                <label for="to">To</label>
+                <input type="text" id="to" size="30">
+            </div>
+            <div class="form-group">
+                <label for="mail">Your email</label>
+                <input type="text" id="mail" size="30">
+            </div>
+            <div class="form-group">
+                <label for="mess">Message</label>
+                <textarea name="" id="Message" cols="70" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">Attach File</label>
+                <input type="file" id="file">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>How you found us:</legend>
+            <div>
+                <label for="sel">How did you hear of us</label>
+                <select name="" id="sel">
+                    <option value="v1">Google</option>
+                    <option value="v2">Yahoo</option>
+                    <option value="v3">Other</option>
+                </select>
+            </div>
+            <div>
+                <label style="margin-right: 95px;" class="lal" for="xn">Newsletter</label>
+                <label for="xn"> 
+                    <input type="checkbox" name="" value="1" id="xn">
+                    Ensure this box is checked if you would like to receive email updates
+                </label>
+            </div>
+        </fieldset>
+        <button type="submit">Send message</button>
+    </form>
+</body>
+</html>
